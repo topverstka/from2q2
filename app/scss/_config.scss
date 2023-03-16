@@ -1,0 +1,62 @@
+// Fonts
+$font-PD: "PlayfairDisplay-Regular", sans-serif, Arial;
+$font-Form: "Form-Bold", sans-serif, Arial;
+$font-RHD: "RedHatDisplay-Regular", sans-serif, Arial;
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('PlayfairDisplay-Regular', normal, 400, '../fonts/PlayfairDisplay-Regular.woff2');
+@include font('Form-Bold', normal, 700, '../fonts/Form-Bold.woff2');
+
+@include font('RedHatDisplay-Regular', normal, 400, '../fonts/RedHatDisplay-Regular.woff2');
+@include font('RedHatDisplay-Regular', normal, 300, '../fonts/RedHatDisplay-Light.woff2');
+
+// Color
+$green: #00C652;
+
+// CSS
+
+html {
+	font-size: 10px;
+}
+
+body {
+	background-color: #fff;
+	overflow-x: hidden;
+	font-size: 1.6rem;
+	min-width: 32rem;
+	color: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input,
+textarea,
+a {
+
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: none;
+		color: inherit;
+	}
+}

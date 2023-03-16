@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+
+   <title>Title</title>
+
+   <link rel="icon" href="">
+   <link rel="stylesheet" href="css/app.min.css?var=1.0">
+
+
+   <script src="libs/gsap/gsap.min.js" defer></script>
+   <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+   <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+   <script defer src="js/app.min.js?var=1.0" defer></script>
+
+
+</head>
+
+<body>
+
+   <div class="wrapper">
+      <div class="content">
+
+         <div class="main-header">
+
+            <div class="logo">
+               <img class="logo__img" src="img/logo.svg" alt="">
+            </div>
+
+            <div class="main-header-img">
+               <div class="main-header-img__bgc">
+                  <img class="main-header-img__img" src="img/main-header/main-header-1.png" alt="">
+               </div>
+               <div class="main-header-img__1">
+                  <img class="main-header-img__img" src="img/main-header/main-header-2.svg" alt="">
+               </div>
+               <div class="main-header-img__2">
+                  <img class="main-header-img__img" src="img/main-header/main-header-4.svg" alt="">
+               </div>
+            </div>
+
+            <div class="main-header-img-dream-girl">
+               <div class="main-header-img-dream-girl__1">
+                  <img src="img/main-header/smart_trade_news_1.png" alt="">
+               </div>
+               <div class="main-header-img-dream-girl__dialor-circle">
+                  <img class="main-header-img-dream-girl__dialor-circle-1" src="img/dialog-circle/dialog-circle-1.svg"
+                     alt="">
+                  <img class="main-header-img-dream-girl__dialor-circle-2" src="img/dialog-circle/dialog-circle-2.svg"
+                     alt="">
+                  <img class="main-header-img-dream-girl__dialor-circle-3" src="img/dialog-circle/dialog-circle-3.svg"
+                     alt="">
+               </div>
+            </div>
+
+         </div>
+
+         <header class="header">
+            <div class="container">
+               <div class="header__wr">
+
+                  <div class="header__item">
+                     <div class="subscribe">
+                        <span class="subscribe__text">Subscribe</span>
+                        <svg class="subscribe__icon" width="113" height="32" viewBox="0 0 113 32" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M1 9.80388C3.33333 15.6372 11.1 24.4039 23.5 12.8039C39 -1.69612 15.1509 -2.19612 15.5 7.80388C15.8491 17.8039 29.9891 30.304 41.5 30.304C61.5 30.304 75.5 9.80396 67.5 3.80396C59.5 -2.19604 54.6997 7.14886 58.5 12.8039C63 19.5 71.5 25.304 84 20.804C94 17.204 105.833 7.97062 110.5 3.80396M110.5 3.80396C108.5 4.63729 103.5 6.30396 99.5 6.30396M110.5 3.80396C110 5.63729 109.3 9.80396 110.5 11.804"
+                              stroke="#EFA29E" stroke-width="2" />
+                        </svg>
+
+                     </div>
+                  </div>
+
+                  <div class="header__item">
+                     <div class="search header__search">
+                        <button class="search__btn">
+                           <img class="search__icon" src="img/icon/search.svg" alt="">
+                        </button>
+                        <input class="search__input" type="text">
+                     </div>
+                     <div class="btn-menu header__btn-menu">
+                        <svg class="btn-menu__icon" width="78" height="77" viewBox="0 0 78 77" fill="none"
+                           xmlns="http://www.w3.org/2000/svg">
+                           <path
+                              d="M10.3206 30.1094C10.3206 30.1094 10.9436 28.2159 11.8186 26.6564C18.6154 18.949 28.7586 14.2709 39.3212 14.1097C50.8515 13.9336 68.7695 20.9991 69.8212 35.1097C71.384 56.0782 40.1864 64.6986 25.821 60.1096C13.8288 56.2788 4.41259 41.4609 10.3206 30.1094Z"
+                              fill="#F5F1D4" />
+                           <path
+                              d="M13.6736 24.6654C11.9717 25.0909 10.3206 30.1094 10.3206 30.1094C4.41259 41.4609 13.8288 56.2788 25.821 60.1096C40.1864 64.6986 71.384 56.0782 69.8212 35.1097C68.7695 20.9991 50.8515 13.9336 39.3212 14.1097C28.7122 14.2716 18.5263 18.9902 11.7292 26.7583"
+                              stroke="#A54A3E" stroke-width="2" stroke-linecap="round" />
+                           <path
+                              d="M11.3202 27.6094C0.820072 39.1094 -2.75654 58.9602 5.73509 69.134C16.1979 81.6694 38.708 71.7018 48.9139 64.4809C59.293 57.1376 63.6661 53.4705 70.3204 42.6094C76.9747 31.7482 78.8737 19.2718 74.8212 9.40166C68.0008 -7.20973 41.2806 5.2242 31.1158 9.40191"
+                              stroke="#A54A3E" stroke-width="2" stroke-linecap="round" />
+                           <line x1="24.8196" y1="34.1095" x2="49.8196" y2="34.1095" stroke="#F26553"
+                              stroke-width="2" />
+                           <line x1="24.8196" y1="42.1095" x2="49.8196" y2="42.1095" stroke="#F26553"
+                              stroke-width="2" />
+                        </svg>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </header>
+
+         <section class="section section__main-article">
+            <div class="container">
+               <article class="article-main">
+                  <div class="article-main__sub-title">
+                     Latest
+                  </div>
+                  <h3 class="article-main__title">
+                     <a class="article-main__link" href="">
+                        A Day On: Jupiter's Great Red Storm
+                     </a>
+                  </h3>
+                  <div class="article-main__wr">
+                     <span class="article-main__autor">By: Jolene Creighton</span>
+                     <time class="article-main__time">July 6, 2022</time>
+                  </div>
+                  <div class="article-main__img-wr">
+                     <img class="article-main__img" src="img/article/article-1.png" alt="">
+                  </div>
+               </article>
+               <div class="front-el">
+                  <img class="front-el__1" src="img/main-article/main-article-1.svg" alt="">
+                  <img class="front-el__2" src="img/main-article/main-article-2.svg" alt="">
+                  <img class="front-el__3" src="img/main-article/main-article-3.svg" alt="">
+               </div>
+            </div>
+         </section>
+
+         <section class="section section__main-quote">
+            <div class="container">
+               <div class="main-quote">
+                  <div class="main-quote__row">
+
+                     <div class="main-quote__item main-quote__item--pink">
+                        <div class="main-quote__sub-title">
+                           tech
+                        </div>
+                        <h3 class="main-quote__title">
+                           Can we please agree to disagree about Pluto’s planetary status?
+                        </h3>
+                     </div>
+
+                     <div class="main-quote__item">
+                        <div class="main-quote__sub-title">
+                           physics
+                        </div>
+                        <h3 class="main-quote__title">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs
+                        </h3>
+                     </div>
+
+                     <div class="main-quote__item main-quote__item--mint">
+                        <div class="main-quote__sub-title">
+                           tech
+                        </div>
+                        <h3 class="main-quote__title">
+                           Can we please agree to disagree about Pluto’s planetary status?
+                        </h3>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="section section__main-news-letter">
+            <div class="container">
+               <div class="main-news-letter">
+                  <div class="main-news-letter__row">
+                     <h3 class="main-news-letter__title">
+                        IT'S <br> A NEWSLETTER!
+                     </h3>
+                  </div>
+                  <div class="subscribe main-news-letter__subscribe">
+                     <span class="subscribe__text">Subscribe, Seeker</span>
+                     <svg class="subscribe__icon" width="113" height="32" viewBox="0 0 113 32" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M1 9.80388C3.33333 15.6372 11.1 24.4039 23.5 12.8039C39 -1.69612 15.1509 -2.19612 15.5 7.80388C15.8491 17.8039 29.9891 30.304 41.5 30.304C61.5 30.304 75.5 9.80396 67.5 3.80396C59.5 -2.19604 54.6997 7.14886 58.5 12.8039C63 19.5 71.5 25.304 84 20.804C94 17.204 105.833 7.97062 110.5 3.80396M110.5 3.80396C108.5 4.63729 103.5 6.30396 99.5 6.30396M110.5 3.80396C110 5.63729 109.3 9.80396 110.5 11.804"
+                           stroke="#EFA29E" stroke-width="2"></path>
+                     </svg>
+                  </div>
+                  <img class="main-news-letter__el-4" src="img/main-news-letter/main-news-letter-4.svg" alt="">
+               </div>
+            </div>
+            <div class="main-news-letter__el">
+               <img class="main-news-letter__el-1" src="img/main-news-letter/main-news-letter-1.svg" alt="">
+               <img class="main-news-letter__el-2" src="img/main-news-letter/main-news-letter-2.png" alt="">
+               <img class="main-news-letter__el-3" src="img/main-news-letter/main-news-letter-3.png" alt="">
+               <img class="main-news-letter__el-5" src="img/main-news-letter/main-news-letter-5.png" alt="">
+               <a class="main-news-letter__el-6" href="">
+                  <img src="img/main-news-letter/main-news-letter-6.svg" alt="">
+               </a>
+            </div>
+         </section>
+
+         <section class="section section__section-article">
+            <div class="container">
+               <div class="section-article__row">
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-3.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              Can we please agree to disagree about Pluto’s planetary
+                              status?
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs&
+                           Inside
+                           NASA’s new top secret fully
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-1.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              A day on: Jupiter’s great red storm
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs&
+                           Inside
+                           NASA’s new top secret fully Inside NASA’s new top secret fully autonomous building that is
+                           probably
+                           fully of cyborgs& Inside
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-4.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              Black holes: What are they? and how did we discover them?
+                              are they dangerous to us?
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs&
+                           Inside
+                           NASA’s new top secret fully
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-2.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              physical phenomena in space
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-3.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              Can we please agree to disagree about Pluto’s planetary
+                              status?
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs&
+                           Inside
+                           NASA’s new top secret fully
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-1.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              A day on: Jupiter’s great red storm
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs&
+                           Inside
+                           NASA’s new top secret fully Inside NASA’s new top secret fully autonomous building that is
+                           probably
+                           fully of cyborgs& Inside
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-4.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              Black holes: What are they? and how did we discover them?
+                              are they dangerous to us?
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret fully autonomous building that is probably fully of cyborgs&
+                           Inside
+                           NASA’s new top secret fully
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+                  <div class="section-article__col">
+                     <article class="article">
+                        <div class="article__img-wr">
+                           <img class="article__img" src="img/article/article-2.png" alt="">
+                           <div class="article__tag">
+                              tech
+                           </div>
+                        </div>
+                        <h3 class="article__title">
+                           <a class="article__link" href="">
+                              physical phenomena in space
+                           </a>
+                        </h3>
+                        <p class="article__text">
+                           Inside NASA’s new top secret
+                        </p>
+                        <div class="article__wr">
+                           <span class="article__autor">By: Jolene Creighton</span>
+                           <time class="article__time">July 6, 2022</time>
+                        </div>
+                     </article>
+                  </div>
+
+               </div>
+            </div>
+            <div class="auasar-img">
+               <img class="auasar-img__img-1" src="img/quasar/quasar-1.svg" alt="">
+            </div>
+         </section>
+
+      </div>
+   </div>
+
+</body>
+
+</html>
