@@ -36,7 +36,7 @@ button {
 
 .container {
      width: vw(1125);
-     padding: 0 2.5rem;
+     padding: 0 vw(25);
      margin: 0 auto;
      max-width: 100%;
 }
@@ -199,7 +199,7 @@ body {
      }
 
      &__icon {
-          margin-left: 1rem;
+          margin-left: vw(10);
           vertical-align: middle;
           width: vw(105);
           height: vw(28);
@@ -402,7 +402,7 @@ body {
      &__item {
           text-align: center;
           width: calc(vw(1100) / 3);
-          padding: 0 1rem;
+          padding: 0 vw(10);
 
           &--pink {
                .main-quote__title {
@@ -421,7 +421,7 @@ body {
 
      &__tag {
           display: block;
-          padding-bottom: 2rem;
+          padding-bottom: vw(20);
 
           img {
                height: vw(20);
@@ -604,12 +604,12 @@ body {
      &__wr {
           display: block;
           color: #FFD4F3;
-          font-size: 1.7rem;
+          font-size: vw(17);
           font-family: $font-PD;
      }
 
      &__autor {
-          margin-right: 6rem;
+          margin-right: vw(60);
      }
 
      &__time {
@@ -788,7 +788,7 @@ body {
           text-transform: uppercase;
           font-size: vw(240);
           font-family: $font-Form;
-          margin-bottom: 11rem;
+          margin-bottom: vw(110);
           position: relative;
           z-index: 2;
      }
@@ -879,7 +879,7 @@ body {
      }
 
      &__inf {
-          font-size: 1.4rem;
+          font-size: vw(14);
           text-transform: uppercase;
           font-family: $font-Form;
           color: $yellow;
@@ -894,7 +894,7 @@ body {
      }
 
      &__social {
-          padding-left: vw(450);
+          padding-left: vw(400);
           display: flex;
      }
 
