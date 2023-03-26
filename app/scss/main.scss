@@ -370,17 +370,15 @@ body {
      &__1 {
           top: vw(145);
           right: 0;
-          @include paralax(8.5);
           width: vw(430);
-
      }
 
 
      &__2 {
           top: vw(375);
           left: 0;
-          @include paralax(10.5);
           width: vw(545);
+          transform: translateY(-50px);
      }
 
      &__3 {
@@ -496,7 +494,7 @@ body {
           right: vw(-65);
           top: vw(30);
           width: vw(390);
-          @include paralax(70)
+          transform: translateY(-100px);
      }
 
      &__el-5 {
